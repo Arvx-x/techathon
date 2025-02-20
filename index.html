@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Hub - Latest Tech News & Research</title>
+  <style>
+    /*--------------------------------------------------------------
+    # Base Variables & Reset
+    --------------------------------------------------------------*/
+    :root {
+      --primary-color: #1da1f2; /* Twitter-like blue */
+      --background-color: #121212;
+      --text-color: #e1e8ed;
+      --nav-height: 60px;
+      --max-width: 1200px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /*--------------------------------------------------------------
+    # Navbar Styles
+    --------------------------------------------------------------*/
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #2ecc71; /* Fresh green background */
+      padding: 0 20px;
+      height: var(--nav-height);
+      border-bottom: 1px solid #27ae60; /* Darker green border */
+      position: relative;
+      box-shadow: 0 2px 10px rgba(46, 204, 113, 0.2); /* Subtle green glow */
+    }
+    .navbar .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white; /* White text for better contrast */
+    }
+    .navbar .menu {
+      display: flex;
+      list-style: none;
+    }
+    .navbar .menu li {
+      margin: 0 10px;
+    }
+    .navbar .menu li a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      background-color: transparent;
+    }
+    .navbar .menu li a:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s ease, height 0.6s ease;
+    }
+    .navbar .menu li a:hover {
+      background-color: #27ae60; /* Darker green on hover */
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(39, 174, 96, 0.3);
+    }
+    .navbar .menu li a:active:before {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+    .navbar .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5em;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .navbar .menu-toggle:hover {
+      transform: scale(1.1);
+    }
+    /*--------------------------------------------------------------
+    # Main Content Layout
+    --------------------------------------------------------------*/
+    main {
+      max-width: var(--max-width);
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    /* Grid layout for placeholder content cards */
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    /*--------------------------------------------------------------
+    # Footer Styles
+    --------------------------------------------------------------*/
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      border-top: 1px solid #333;
+      margin-top: 40px;
+    }
+
+    /*--------------------------------------------------------------
+    # Responsive Styles
+    --------------------------------------------------------------*/
+    @media (max-width: 768px) {
+      .navbar .menu {
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height);
+        left: 0;
+        right: 0;
+        background-color: #2ecc71;
+        border-bottom: 2px solid #27ae60;
+        display: none; /* Hidden by default */
+      }
+      .navbar .menu.active {
+        display: flex;
+      }
+      .navbar .menu li {
+        margin: 10px 0;
+        text-align: center;
+      }
+      .navbar .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navbar -->
+  <header>
+    <nav class="navbar">
+      <!-- Site Logo/Title -->
+      <div class="logo">Tech Hub</div>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <!-- Navigation Menu -->
+      <ul class="menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tech-news">Tech News</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#breakthroughs">Breakthroughs</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Welcome to Tech Hub</h2>
+      <p>
+        Your one-stop platform for the latest tech news, cutting-edge research papers, groundbreaking breakthroughs, and insightful blogs.
+      </p>
+    </section>
+
+    <!-- Tech News Section -->
+    <section id="tech-news">
+      <h2>Latest Tech News</h2>
+      <div class="content-grid">
+        <!-- Placeholder for tech news cards -->
+        <div class="card">
+          <h3>News Title 1</h3>
+          <p>Brief description of the tech news article. More details to be added.</p>
+        </div>
+        <div class="card">
+          <h3>News Title 2</h3>
+          <p>Brief description of the tech news article. More details to be added.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research">
+      <h2>Latest Research Papers</h2>
+      <div class="content-grid">
+        <!-- Placeholder for research paper cards -->
+        <div class="card">
+          <h3>Research Paper 1</h3>
+          <p>Summary of the research paper. More details to be added.</p>
+        </div>
+        <div class="card">
+          <h3>Research Paper 2</h3>
+          <p>Summary of the research paper. More details to be added.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breakthroughs Section -->
+    <section id="breakthroughs">
+      <h2>Breakthroughs</h2>
+      <div class="content-grid">
+        <!-- Placeholder for breakthrough cards -->
+        <div class="card">
+          <h3>Breakthrough 1</h3>
+          <p>Details of the breakthrough. More information to be added.</p>
+        </div>
+        <div class="card">
+          <h3>Breakthrough 2</h3>
+          <p>Details of the breakthrough. More information to be added.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs">
+      <h2>Latest Blogs</h2>
+      <div class="content-grid">
+        <!-- Placeholder for blog cards -->
+        <div class="card">
+          <h3>Blog Post 1</h3>
+          <p>A snippet from the blog post. More details to be added.</p>
+        </div>
+        <div class="card">
+          <h3>Blog Post 2</h3>
+          <p>A snippet from the blog post. More details to be added.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        For inquiries, please email us at
+        <a href="mailto:contact@techhub.com">contact@techhub.com</a>.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tech Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- Minimal JavaScript for Navbar Toggle (Mobile) -->
+  <script>
+    // Get elements for the mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    // Toggle the 'active' class to show/hide the mobile menu
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
