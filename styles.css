@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+    background-color: #121212;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+}
+
+/* Navbar Customization */
+.navbar {
+    background-color: #1a1a2e; /* Darker, Grok-like background */
+}
+.navbar-brand, .nav-link {
+    color: #fff !important; /* White text for contrast */
+}
+.nav-link:hover {
+    color: #6f42c1 !important; /* Purple hover effect */
+}
+
+/* Section Styling */
+section {
+    min-height: 80vh;
+    padding: 4rem 0;
+    background-color: #1a1a1a;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+}
+
+#home h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+#home .lead {
+    color: #b3b3b3;
+    font-size: 1.3rem;
+}
+
+#home img {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Section Styles */
+.chat-container {
+    max-width: 800px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.chat-subtitle {
+    margin: 0.5rem 0 0;
+    opacity: 0.9;
+    font-size: 0.9rem;
+}
+
+.chat-window {
+    height: 500px;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: #121212;
+    border: 1px solid #2a2a2a;
+}
+
+.message-container {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-content {
+    max-width: 80%;
+    padding: 1rem 1.25rem;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.ai-message {
+    align-items: flex-start;
+}
+
+.ai-message .message-content {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+
+.user-message {
+    align-items: flex-end;
+}
+
+.user-message .message-content {
+    background: linear-gradient(135deg, #8e44ad99, #9b59b699);
+    color: white;
+}
+
+.chat-input-container {
+    padding: 1.25rem;
+    background-color: #1a1a1a;
+    border-top: 1px solid #2a2a2a;
+}
+
+.chat-form {
+    display: flex;
+}
+
+.input-group {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 0.875rem 1.25rem;
+    border: 1px solid #333;
+    border-radius: 12px;
+    background-color: #242424;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.chat-input:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.2);
+}
+
+.chat-input::placeholder {
+    color: #666;
+}
+
+.chat-send-btn {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    border: none;
+    border-radius: 12px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.chat-send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(142, 68, 173, 0.3);
+}
+
+.chat-send-btn:active {
+    transform: translateY(1px);
+}
+
+/* Custom Scrollbar */
+.chat-window::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-window::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.chat-window::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.chat-window::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+/* Add this to your existing transitions */
+.message-container {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards (Testimonials, Contact) */
+.card {
+    background-color: #242424;
+    border: 1px solid #333;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s; /* Snappy feel */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    color: #ffffff;
+}
+
+.card-text {
+    color: #e0e0e0;
+}
+
+.text-muted {
+    color: #b3b3b3 !important;
+}
+
+/* Purple Buttons and Elements */
+.btn-primary {
+    background-color: #6f42c1; /* Purple */
+    border-color: #6f42c1;
+}
+.btn-primary:hover {
+    background-color: #5a32a3; /* Darker purple */
+    border-color: #5a32a3;
+}
+
+/* Responsive Images */
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* Testimonials */
+.bg-light {
+    background-color: #1a1a1a !important;
+}
+
+/* Modern Purple Navbar Styles */
+.custom-navbar {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    padding: 1rem 0;
+}
+
+.custom-navbar .navbar-brand {
+    color: white;
+    font-weight: 800;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.custom-navbar .navbar-toggler {
+    border: none;
+    color: white;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.custom-navbar .fancy-link {
+    color: white !important;
+    margin: 0 5px;
+    padding: 8px 16px !important;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .fancy-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-navbar .fancy-link:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Add ripple effect */
+.custom-navbar .fancy-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s ease, height 0.6s ease;
+}
+
+.custom-navbar .fancy-link:active::before {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+}
+
+/* Mobile menu styles */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: linear-gradient(135deg, #8e44ad, #9b59b6);
+        border-radius: 0 0 15px 15px;
+        padding: 1rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .custom-navbar .fancy-link {
+        margin: 5px 0;
+    }
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #1a1a1a;
+}
+
+/* Contact Section */
+#contact .card {
+    background-color: #242424;
+}
+
+#contact .card-title {
+    color: #ffffff;
+}
+
+/* Add smooth transitions */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
