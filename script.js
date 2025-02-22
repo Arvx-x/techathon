@@ -13,8 +13,15 @@ const navLinks = document.querySelectorAll('.nav-link');
 
 navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
-        e.preventDefault(); // Prevent default anchor behavior
-        const targetId = this.getAttribute('href').substring(1); // Get section ID
+        const href = this.getAttribute('href');
+        
+        // If it's an external page (contains .html), let the default behavior happen
+        if (href.includes('.html')) {
+            return;
+        }
+        
+        e.preventDefault(); // Prevent default anchor behavior only for section links
+        const targetId = href.substring(1); // Get section ID
         sections.forEach(section => {
             if (section.id === targetId) {
                 section.classList.remove('d-none'); // Show target section
@@ -40,4 +47,48 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
     }, 1000);
     
     document.getElementById('user-input').value = ''; // Clear input
+});
+
+// Counter Animation
+function animateCounter(element) {
+    const target = parseInt(element.getAttribute('data-target'));
+    const duration = 2000; // 2 seconds
+    const step = target / (duration / 16); // Update every 16ms (60fps)
+    let current = 0;
+    
+    const timer = setInterval(() => {
+        current += step;
+        if (current >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(current);
+        }
+    }, 16);
+}
+
+// Intersection Observer for counter animation
+const observerOptions = {
+    threshold: 0.5
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll('.counter-number');
+            counters.forEach(counter => {
+                counter.classList.add('animated');
+                animateCounter(counter);
+            });
+            observer.unobserve(entry.target);
+        }
+    });
+}, observerOptions);
+
+// Observe the counter section
+document.addEventListener('DOMContentLoaded', () => {
+    const counterSection = document.querySelector('.counter-section');
+    if (counterSection) {
+        observer.observe(counterSection);
+    }
 });
