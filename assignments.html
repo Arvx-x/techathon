@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura - Assignments</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (same as index.html) -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand" href="index.html">Laura</a>
+                <div id="user-button" class="ms-3"></div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fancy-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fancy-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fancy-link active" href="assignments.html">Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fancy-link" href="index.html#about">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Assignments Section -->
+    <section class="assignments-section py-5">
+        <div class="container">
+            <div class="assignments-container mx-auto">
+                <div class="assignments-header">
+                    <h2>Assignment Grading</h2>
+                    <p class="assignments-subtitle">Upload your assignment for AI-powered grading</p>
+                </div>
+                <div class="assignments-window" id="assignments-window">
+                    <!-- Uploaded assignments will appear here -->
+                </div>
+                <div class="upload-container">
+                    <form id="assignment-form" class="upload-form">
+                        <div class="upload-box" id="upload-box">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & Drop your assignment here or</p>
+                            <input type="file" id="file-input" accept=".pdf,.doc,.docx,.txt,.jpg,.jpeg,.png" hidden>
+                            <button type="button" class="upload-btn" onclick="document.getElementById('file-input').click()">
+                                Choose File
+                            </button>
+                            <p class="file-info" id="file-info">Supported formats: PDF, DOC, DOCX, TXT, JPG, PNG</p>
+                        </div>
+                        <button type="submit" class="grade-btn" id="grade-btn" disabled>
+                            Grade Assignment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assignments.js"></script>
+
+    <!-- Clerk Authentication -->
+    <script
+        async
+        crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_aW50ZW5zZS1qYWd1YXItMzEuY2xlcmsuYWNjb3VudHMuZGV2JA"
+        src="https://intense-jaguar-31.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+        type="text/javascript">
+    </script>
+</body>
+</html> 
