@@ -99,4 +99,30 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('user-input').value = ''; // Clear input
         });
     }
+
+    // Handle sign-in button click
+    const signInLink = document.querySelector('a[href="signin.html"]');
+    if (signInLink) {
+        signInLink.addEventListener('click', async function(e) {
+            e.preventDefault();
+            
+            // Make sure Clerk is loaded
+            if (typeof Clerk !== 'undefined') {
+                try {
+                    // Open Clerk's sign-in modal directly
+                    await Clerk.openSignIn({
+                        afterSignInUrl: window.location.origin + '/index.html',
+                        afterSignUpUrl: window.location.origin + '/index.html',
+                    });
+                } catch (error) {
+                    console.error('Error opening Clerk sign-in:', error);
+                    // Fallback to redirect if modal fails
+                    window.location.href = 'signin.html';
+                }
+            } else {
+                // Fallback if Clerk isn't loaded
+                window.location.href = 'signin.html';
+            }
+        });
+    }
 });

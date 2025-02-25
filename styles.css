@@ -874,556 +874,6 @@ input.cl-formFieldInput,
     border: 2px solid rgba(255, 255, 255, 0.8) !important;
 }
 
-/* Dropdown Menu Styling */
-.cl-userButtonPopup {
-    background: #1a1a1a !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2) !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-}
-
-.cl-userButtonPopoverCard {
-    background: transparent !important;
-}
-
-.cl-userButtonPopoverActions {
-    background: transparent !important;
-}
-
-.cl-userButtonPopoverFooter {
-    background: transparent !important;
-    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Dropdown Items */
-.cl-userButtonPopoverActionButton {
-    color: #ffffff !important;
-    transition: all 0.3s ease !important;
-    border-radius: 8px !important;
-    margin: 2px 0 !important;
-}
-
-.cl-userButtonPopoverActionButton:hover {
-    background: rgba(142, 68, 173, 0.2) !important;
-    color: #9b59b6 !important;
-}
-
-/* User Info in Dropdown */
-.cl-userButtonPopoverCard {
-    padding: 1rem !important;
-}
-
-.cl-userPreviewMainIdentifier {
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important;
-}
-
-.cl-userPreviewSecondaryIdentifier {
-    color: rgba(255, 255, 255, 0.7) !important;
-}
-
-/* Sign Out Button */
-.cl-userButtonPopoverActionButton__signOut {
-    color: #ff6b6b !important;
-}
-
-.cl-userButtonPopoverActionButton__signOut:hover {
-    background: rgba(255, 107, 107, 0.1) !important;
-    color: #ff6b6b !important;
-}
-
-/* Profile Management Section */
-.cl-profileSectionContent {
-    background: #1a1a1a !important;
-    color: white !important;
-}
-
-.cl-profileSectionTitle {
-    color: white !important;
-    font-family: 'Poppins', sans-serif !important;
-}
-
-.cl-profileSectionPrimaryButton {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-    border: none !important;
-    color: white !important;
-}
-
-.cl-profileSectionPrimaryButton:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.4) !important;
-}
-
-/* User Button and Dashboard Styles - Solid Theme */
-.cl-userButtonBox,
-.cl-userButtonTrigger {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-    color: #ffffff !important;
-    border: none !important;
-    box-shadow: 0 2px 8px rgba(142, 68, 173, 0.3) !important;
-}
-
-/* Main Popover Card */
-.cl-userButtonPopoverCard {
-    background: #1a1a1a !important;
-    border: 2px solid #8e44ad !important;
-    box-shadow: 0 4px 20px rgba(142, 68, 173, 0.4) !important;
-    backdrop-filter: none !important;
-}
-
-/* Account Menu Sections */
-.cl-userButtonPopoverActions,
-.cl-userButtonPopoverFooter {
-    background: #242424 !important;
-    border: none !important;
-}
-
-/* Menu Items */
-.cl-userButtonPopoverActionButton {
-    background: #1a1a1a !important;
-    color: #ffffff !important;
-    margin: 4px 8px !important;
-    border-radius: 8px !important;
-    transition: all 0.3s ease !important;
-    border: 1px solid #333 !important;
-}
-
-.cl-userButtonPopoverActionButton:hover {
-    background: #8e44ad !important;
-    transform: translateY(-2px) !important;
-    border-color: #8e44ad !important;
-}
-
-/* User Info Text */
-.cl-userPreviewMainIdentifier,
-.cl-userPreviewSecondaryIdentifier,
-.cl-userButtonPopoverActionButtonText,
-.cl-userButtonPopoverActionButtonIcon {
-    color: #ffffff !important;
-    font-weight: 500 !important;
-}
-
-/* Account Management Section */
-.cl-modalBackdrop {
-    background: rgba(0, 0, 0, 0.8) !important;
-}
-
-.cl-card,
-.cl-modal,
-.cl-modalContent,
-.cl-verticalTabsContent {
-    background: #1a1a1a !important;
-    color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Profile sections and tabs */
-.cl-verticalTabList {
-    background: #242424 !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-verticalTabButton {
-    color: white !important;
-    background: transparent !important;
-}
-
-.cl-verticalTabButton[data-selected="true"] {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-}
-
-/* Form fields */
-.cl-formFieldInput,
-.cl-formFieldInputGroup,
-.cl-selectButton {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
-}
-
-/* Buttons */
-.cl-modalCloseButton,
-.cl-formButtonReset {
-    background: #333 !important;
-    color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-formButtonPrimary {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-    color: white !important;
-    border: none !important;
-}
-
-/* Profile sections */
-.cl-profileSection {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-profileSectionTitle,
-.cl-profileSectionSubtitle,
-.cl-profileSectionContent,
-.cl-profileSectionPrimaryButton {
-    color: white !important;
-}
-
-/* Tables */
-.cl-table {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-tableCell {
-    border-color: rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
-}
-
-/* Ensure all text is visible */
-.cl-headerTitle,
-.cl-headerSubtitle,
-.cl-formFieldLabel,
-.cl-formFieldSuccessText,
-.cl-formHeaderTitle,
-.cl-formHeaderSubtitle,
-.cl-accordionTriggerText,
-.cl-modalTitle {
-    color: white !important;
-}
-
-/* Device list and security items */
-.cl-deviceIcon,
-.cl-mfaPhoneNumberText,
-.cl-mfaStrategyCardTitle,
-.cl-mfaStrategyCardSubtitle {
-    color: white !important;
-}
-
-/* Dropdown menus */
-.cl-dropdown {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-dropdownButton {
-    color: white !important;
-}
-
-/* Hover states */
-.cl-verticalTabButton:hover,
-.cl-modalCloseButton:hover,
-.cl-formButtonReset:hover {
-    background: #333 !important;
-}
-
-.cl-formButtonPrimary:hover {
-    background: linear-gradient(135deg, #9b59b6, #8e44ad) !important;
-    transform: translateY(-2px) !important;
-}
-
-/* Active states */
-.cl-formFieldInput:focus,
-.cl-formFieldInputGroup:focus-within {
-    border-color: #9b59b6 !important;
-    box-shadow: 0 0 0 2px rgba(155, 89, 182, 0.2) !important;
-}
-
-/* Profile Dashboard Dark Theme */
-.cl-modalBackdrop {
-    background: rgba(0, 0, 0, 0.8) !important;
-}
-
-.cl-card,
-.cl-modal,
-.cl-modalContent,
-.cl-verticalTabsContent {
-    background: #1a1a1a !important;
-    color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Profile sections and tabs */
-.cl-verticalTabList {
-    background: #242424 !important;
-    border-right: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-verticalTabButton {
-    color: white !important;
-    background: transparent !important;
-}
-
-.cl-verticalTabButton[data-selected="true"] {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-}
-
-/* Form fields */
-.cl-formFieldInput,
-.cl-formFieldInputGroup,
-.cl-selectButton {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
-}
-
-/* Buttons */
-.cl-modalCloseButton,
-.cl-formButtonReset {
-    background: #333 !important;
-    color: white !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-formButtonPrimary {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-    color: white !important;
-    border: none !important;
-}
-
-/* Profile sections */
-.cl-profileSection {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-profileSectionTitle,
-.cl-profileSectionSubtitle,
-.cl-profileSectionContent,
-.cl-profileSectionPrimaryButton {
-    color: white !important;
-}
-
-/* Tables */
-.cl-table {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-tableCell {
-    border-color: rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
-}
-
-/* Ensure all text is visible */
-.cl-headerTitle,
-.cl-headerSubtitle,
-.cl-formFieldLabel,
-.cl-formFieldSuccessText,
-.cl-formHeaderTitle,
-.cl-formHeaderSubtitle,
-.cl-accordionTriggerText,
-.cl-modalTitle {
-    color: white !important;
-}
-
-/* Device list and security items */
-.cl-deviceIcon,
-.cl-mfaPhoneNumberText,
-.cl-mfaStrategyCardTitle,
-.cl-mfaStrategyCardSubtitle {
-    color: white !important;
-}
-
-/* Dropdown menus */
-.cl-dropdown {
-    background: #242424 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
-}
-
-.cl-dropdownButton {
-    color: white !important;
-}
-
-/* Hover states */
-.cl-verticalTabButton:hover,
-.cl-modalCloseButton:hover,
-.cl-formButtonReset:hover {
-    background: #333 !important;
-}
-
-.cl-formButtonPrimary:hover {
-    background: linear-gradient(135deg, #9b59b6, #8e44ad) !important;
-    transform: translateY(-2px) !important;
-}
-
-/* Active states */
-.cl-formFieldInput:focus,
-.cl-formFieldInputGroup:focus-within {
-    border-color: #9b59b6 !important;
-    box-shadow: 0 0 0 2px rgba(155, 89, 182, 0.2) !important;
-}
-
-/* Footer Styles */
-.footer-section {
-    background: #1a1a1a;
-    padding: 4rem 0 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer-heading {
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.footer-description {
-    color: #b3b3b3;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-/* Social Links */
-.social-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-link {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.3s ease;
-}
-
-.social-link:hover {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6);
-    transform: translateY(-3px);
-    color: #ffffff;
-}
-
-/* Footer Links */
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-links li {
-    margin-bottom: 0.8rem;
-}
-
-.footer-links a {
-    color: #b3b3b3;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: #9b59b6;
-    transform: translateX(5px);
-}
-
-/* Contact Info */
-.footer-contact {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-contact li {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    color: #b3b3b3;
-}
-
-.footer-contact li i {
-    color: #9b59b6;
-    margin-right: 1rem;
-    margin-top: 5px;
-}
-
-/* Bottom Footer */
-.footer-bottom {
-    margin-top: 3rem;
-    padding: 1.5rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.copyright {
-    color: #b3b3b3;
-    margin: 0;
-}
-
-.footer-bottom-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-}
-
-.footer-bottom-links a {
-    color: #b3b3b3;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-links a:hover {
-    color: #9b59b6;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .footer-bottom-links {
-        justify-content: flex-start;
-        margin-top: 1rem;
-    }
-    
-    .copyright {
-        text-align: center;
-    }
-    
-    .footer-bottom-links {
-        justify-content: center;
-    }
-}
-
-/* Enhanced User Button Styles */
-#user-button {
-    position: relative;
-    z-index: 1000;
-}
-
-.cl-userButtonBox {
-    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
-    border: none !important;
-    padding: 8px 16px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3) !important;
-    transition: all 0.3s ease !important;
-}
-
-.cl-userButtonBox:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(142, 68, 173, 0.4) !important;
-}
-
-.cl-userButtonTrigger {
-    color: white !important;
-}
-
-.cl-userButtonAvatarBox {
-    border: 2px solid rgba(255, 255, 255, 0.8) !important;
-}
-
-/* Hide the duplicate button if it exists */
-#app #user-button {
-    display: none !important;
-}
-
 /* Auth Overlay Styles */
 #auth-overlay {
     backdrop-filter: blur(8px);
@@ -1818,4 +1268,111 @@ input.cl-formFieldInput,
 
 .service-preview-card:hover .service-hover i {
     transform: translateX(5px);
+}
+
+/* Enhanced Clerk Sign-in Modal Styles */
+.cl-modalBackdrop {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.cl-card, 
+.cl-modal,
+.cl-modalContent {
+    background: #1a1a1a !important;
+    border: 1px solid rgba(142, 68, 173, 0.3) !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.cl-modalCloseButton {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.cl-modalCloseButton:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: rotate(90deg) !important;
+}
+
+.cl-headerTitle, 
+.cl-headerSubtitle {
+    color: white !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.cl-headerTitle {
+    font-weight: 600 !important;
+    font-size: 1.8rem !important;
+    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+}
+
+.cl-formButtonPrimary {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6) !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3) !important;
+}
+
+.cl-formButtonPrimary:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(142, 68, 173, 0.4) !important;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad) !important;
+}
+
+.cl-formFieldInput {
+    background: #242424 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border-radius: 10px !important;
+    padding: 12px 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.cl-formFieldInput:focus {
+    border-color: #8e44ad !important;
+    box-shadow: 0 0 0 2px rgba(142, 68, 173, 0.2) !important;
+}
+
+.cl-socialButtonsBlockButton {
+    background: #242424 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
+    transition: all 0.3s ease !important;
+}
+
+.cl-socialButtonsBlockButton:hover {
+    background: #2a2a2a !important;
+    transform: translateY(-2px) !important;
+}
+
+.cl-dividerLine {
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.cl-dividerText {
+    color: rgba(255, 255, 255, 0.6) !important;
+    background: #1a1a1a !important;
+}
+
+.cl-footerActionLink {
+    color: #9b59b6 !important;
+    transition: all 0.3s ease !important;
+}
+
+.cl-footerActionLink:hover {
+    color: #8e44ad !important;
+    text-decoration: none !important;
+}
+
+.cl-identityPreviewEditButton {
+    color: #9b59b6 !important;
 }
